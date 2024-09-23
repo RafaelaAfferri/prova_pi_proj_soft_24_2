@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Projeto.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">provapi</a> &gt; <a href="index.source.html" class="el_package">br.insper.provapi</a> &gt; <span class="el_source">Projeto.java</span></div><h1>Projeto.java</h1><pre class="source lang-java linenums">package br.insper.provapi;
+
+
+import jakarta.persistence.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import java.util.ArrayList;
+
+@Document
+public class Projeto {
+    @Id
+    private String id;
+
+    private String nome;
+
+    private String descricao;
+
+    private String status;
+
+    private String gerente;
+
+<span class="pc" id="L22">    private ArrayList&lt;String&gt; pessoas = new ArrayList&lt;&gt;();</span>
+
+<span class="fc" id="L24">    public Projeto() {</span>
+<span class="fc" id="L25">    }</span>
+
+<span class="nc" id="L27">    public Projeto(String id, String nome, String descricao, String status, String gerente, ArrayList&lt;String&gt; pessoas) {</span>
+<span class="nc" id="L28">        this.id = id;</span>
+<span class="nc" id="L29">        this.nome = nome;</span>
+<span class="nc" id="L30">        this.descricao = descricao;</span>
+<span class="nc" id="L31">        this.status = status;</span>
+<span class="nc" id="L32">        this.gerente = gerente;</span>
+<span class="nc" id="L33">        this.pessoas = pessoas;</span>
+<span class="nc" id="L34">    }</span>
+
+    public String getId() {
+<span class="nc" id="L37">        return id;</span>
+    }
+
+    public void setId(String id) {
+<span class="nc" id="L41">        this.id = id;</span>
+<span class="nc" id="L42">    }</span>
+
+    public String getNome() {
+<span class="fc" id="L45">        return nome;</span>
+    }
+
+    public void setNome(String nome) {
+<span class="fc" id="L49">        this.nome = nome;</span>
+<span class="fc" id="L50">    }</span>
+
+    public String getDescricao() {
+<span class="fc" id="L53">        return descricao;</span>
+    }
+
+    public void setDescricao(String descricao) {
+<span class="fc" id="L57">        this.descricao = descricao;</span>
+<span class="fc" id="L58">    }</span>
+
+    public String getStatus() {
+<span class="fc" id="L61">        return status;</span>
+    }
+
+    public void setStatus(String status) {
+<span class="fc" id="L65">        this.status = status;</span>
+<span class="fc" id="L66">    }</span>
+
+    public String getGerente() {
+<span class="fc" id="L69">        return gerente;</span>
+    }
+
+    public void setGerente(String gerente) {
+<span class="fc" id="L73">        this.gerente = gerente;</span>
+<span class="fc" id="L74">    }</span>
+
+    public ArrayList&lt;String&gt; getPessoas() {
+<span class="nc" id="L77">        return pessoas;</span>
+    }
+
+    public void setPessoas(ArrayList&lt;String&gt; pessoas) {
+<span class="nc" id="L81">        this.pessoas = pessoas;</span>
+<span class="nc" id="L82">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

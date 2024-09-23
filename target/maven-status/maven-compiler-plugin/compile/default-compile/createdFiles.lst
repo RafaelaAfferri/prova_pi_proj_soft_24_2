@@ -1,0 +1,7 @@
+br\insper\provapi\Usuario.class
+br\insper\provapi\UsuarioService.class
+br\insper\provapi\ProvapiApplication.class
+br\insper\provapi\ProjetoService.class
+br\insper\provapi\Projeto.class
+br\insper\provapi\ProjetoController.class
+br\insper\provapi\ProjetoRepository.class

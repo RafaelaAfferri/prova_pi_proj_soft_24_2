@@ -1,0 +1,7 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+provapi,br.insper.provapi,Projeto,40,36,0,0,14,15,5,9,5,9
+provapi,br.insper.provapi,Usuario,19,7,0,0,8,4,4,2,4,2
+provapi,br.insper.provapi,ProjetoService,30,93,3,17,6,18,2,12,0,4
+provapi,br.insper.provapi,ProjetoController,16,3,0,0,3,1,3,1,3,1
+provapi,br.insper.provapi,UsuarioService,12,3,0,0,2,1,1,1,1,1
+provapi,br.insper.provapi,ProvapiApplication,5,3,0,0,2,1,1,1,1,1
